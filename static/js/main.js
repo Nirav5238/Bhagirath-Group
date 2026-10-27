@@ -1,0 +1,1 @@
+console.log("Bhagirath Group Web Application Loaded Successfully.");
