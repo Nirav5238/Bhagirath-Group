@@ -23,8 +23,8 @@ def transport():
 def real_estate():
     return render_template('real_estate.html', title="Real Estate & Arcade | Bhagirath Group")
 
-@app.route('/cab-service')
-def cab_service():
+@app.route('/Service-to-client')
+def Service_to_client():
     return render_template('cab.html', title="Bhagirath Cab Service")
 
 @app.route('/farm-stay')
