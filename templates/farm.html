@@ -30,6 +30,109 @@
   </ul>
 </div>
     </div>
+
+    {% extends 'base.html' %} 
+{% block content %}
+
+<!-- HERO BANNER SECTION (Matches Service-to-Client Page Layout) -->
+<div style="background-color: #aa5511; padding: 40px 20px; color: #ffffff; font-family: 'Segoe UI', Arial, sans-serif;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <h1 style="font-size: 2.8rem; margin: 0 0 10px 0; font-weight: 700;">River Sand & Stone Aggregate</h1>
+        <p style="font-size: 1.2rem; margin: 0; opacity: 0.9;">High-Quality Construction Aggregates & River Sand Supply</p>
+    </div>
+</div>
+
+<!-- MAIN CONTENT SECTION -->
+<div style="background-color: #f8f9fa; padding: 60px 20px; font-family: 'Segoe UI', Arial, sans-serif;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+        
+        <!-- SECTION MAIN HEADER -->
+        <h2 style="text-align: center; font-size: 2.2rem; color: #0b1a30; margin-bottom: 40px; font-weight: 700;">
+            Our Products & Services
+        </h2>
+        
+        <!-- 3-COLUMN CARD GRID (Matches the structure of the Client Partnerships section) -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 30px; margin-bottom: 50px;">
+            
+            <!-- Card 1: Premium River Sand -->
+            <div style="background: #ffffff; border: 1px solid #e0e0e0; border-radius: 4px; padding: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+                <h3 style="text-align: center; font-size: 1.4rem; color: #0b1a30; margin-top: 0; margin-bottom: 15px; font-weight: 700;">
+                    1. Premium River Sand
+                </h3>
+                <p style="font-size: 0.95rem; line-height: 1.6; color: #555555; margin-bottom: 20px; text-align: justify;">
+                    Our natural river sand is meticulously sourced and processed to ensure the highest purity and optimal grain distribution. It is completely free from organic impurities, clay particles, and harmful chemical contents, ensuring perfect structural cohesion.
+                </p>
+                <ul style="list-style-type: none; padding: 0; margin: 0; font-size: 0.95rem; line-height: 1.6; color: #333333;">
+                    <li style="margin-bottom: 12px; padding-left: 15px; position: relative;">
+                        <span style="color: #0b1a30; position: absolute; left: 0;">•</span>
+                        <strong>Plastering Sand:</strong> Ultra-fine grain texture ideal for creating ultra-smooth, crack-free interior and exterior wall plaster finishes.
+                    </li>
+                    <li style="margin-bottom: 12px; padding-left: 15px; position: relative;">
+                        <span style="color: #0b1a30; position: absolute; left: 0;">•</span>
+                        <strong>Concrete Sand:</strong> Coarse, washed river sand engineered specifically for heavy-duty concrete mixing and robust foundation work.
+                    </li>
+                    <li style="margin-bottom: 12px; padding-left: 15px; position: relative;">
+                        <span style="color: #0b1a30; position: absolute; left: 0;">•</span>
+                        <strong>Bricklaying Sand:</strong> High-grade masonry sand providing exceptional workability and strong bonding properties for brick and block work.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Card 2: Heavy-Duty Stone Aggregates -->
+            <div style="background: #ffffff; border: 1px solid #e0e0e0; border-radius: 4px; padding: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+                <h3 style="text-align: center; font-size: 1.4rem; color: #0b1a30; margin-top: 0; margin-bottom: 15px; font-weight: 700;">
+                    2. Heavy-Duty Stone Aggregates
+                </h3>
+                <p style="font-size: 0.95rem; line-height: 1.6; color: #555555; margin-bottom: 20px; text-align: justify;">
+                    Our crushed stone aggregates are manufactured from high-quality basalt or granite boulders. They are mechanically crushed and precisely screened into uniform sizes to provide maximum structural load-bearing capacity.
+                </p>
+                <ul style="list-style-type: none; padding: 0; margin: 0; font-size: 0.95rem; line-height: 1.6; color: #333333;">
+                    <li style="margin-bottom: 12px; padding-left: 15px; position: relative;">
+                        <span style="color: #0b1a30; position: absolute; left: 0;">•</span>
+                        <strong>10mm Aggregates:</strong> Perfect for thin concrete slabs, pre-cast concrete structures, roofing elements, and smooth surface finishes.
+                    </li>
+                    <li style="margin-bottom: 12px; padding-left: 15px; position: relative;">
+                        <span style="color: #0b1a30; position: absolute; left: 0;">•</span>
+                        <strong>20mm Aggregates:</strong> The industry standard size for ready-mix concrete (RMC), foundational slabs, beams, columns, and general structural framework.
+                    </li>
+                    <li style="margin-bottom: 12px; padding-left: 15px; position: relative;">
+                        <span style="color: #0b1a30; position: absolute; left: 0;">•</span>
+                        <strong>40mm & Larger Aggregates:</strong> Heavy-duty crushed stone ideal for bulk concrete foundations, railway ballast, road base layers, and drainage systems.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Card 3: Why Choose Us (Matches the 3rd card on Service-to-Client) -->
+            <div style="background: #ffffff; border: 1px solid #e0e0e0; border-radius: 4px; padding: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+                <h3 style="text-align: center; font-size: 1.4rem; color: #0b1a30; margin-top: 0; margin-bottom: 15px; font-weight: 700;">
+                    🌟 Why Choose Us?
+                </h3>
+                <ul style="list-style-type: none; padding: 0; margin: 0; font-size: 0.95rem; line-height: 1.6; color: #333333;">
+                    <li style="margin-bottom: 16px; padding-left: 15px; position: relative;">
+                        <span style="color: #0b1a30; position: absolute; left: 0;">•</span>
+                        <strong>Uncompromised Quality:</strong> Every batch undergoes strict quality control checks to meet industrial construction standards and strength requirements.
+                    </li>
+                    <li style="margin-bottom: 16px; padding-left: 15px; position: relative;">
+                        <span style="color: #0b1a30; position: absolute; left: 0;">•</span>
+                        <strong>Reliable Fleet & Timely Delivery:</strong> Armed with a dedicated transit fleet, we ensure prompt dump-truck delivery directly to your active construction site.
+                    </li>
+                    <li style="margin-bottom: 16px; padding-left: 15px; position: relative;">
+                        <span style="color: #0b1a30; position: absolute; left: 0;">•</span>
+                        <strong>Competitive Bulk Pricing:</strong> We offer direct-from-source wholesale pricing structures to keep your construction project well within budget.
+                    </li>
+                    <li style="margin-bottom: 12px; padding-left: 15px; position: relative;">
+                        <span style="color: #0b1a30; position: absolute; left: 0;">•</span>
+                        <strong>Eco-Conscious Sourcing:</strong> Our extraction and crushing methods strictly comply with regional environmental regulations and sustainable standards.
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
     <div class="bg-white p-6 border rounded shadow-sm text-center">
         <!--<i class="fa-solid fa-van-shuttle text-4xl text-amber-600 mb-3"></i>-->
         <div class="space-y-4">
