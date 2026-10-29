@@ -25,7 +25,7 @@ def real_estate():
 
 @app.route('/cab-service')
 def cab_service():
-    return render_template('Services to Clients.html', title="Services to Clients")
+    return render_template('cab.html', title="Bhagirath Cab Service")
 
 @app.route('/farm-stay')
 def farm_stay():
