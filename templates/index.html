@@ -58,7 +58,7 @@
 
 
 
-<!--About Us-->
+<!--About Us 01. -->
 
 <!-- Place this section into your main layout template where you want the "About Us" section to appear -->
 <section class="about-section">
@@ -295,6 +295,269 @@
     }
   }
 </style>
+
+<section class="about-founder-section">
+  <div class="about-container">
+    
+    <!-- Left Side: Founder's Image & Contact Details -->
+    <div class="about-image-column">
+      <div class="image-frame-wrapper">
+        <div class="frame-accent top-left"></div>
+        <div class="frame-accent bottom-right"></div>
+        <!-- Replace 'founder.jpg' with the path to Karshanbhai's portrait image -->
+        <img src="founder.jpg" alt="Karshanbhai (Amubhai) Solanki - Founder of Bhagirath Group" class="profile-display-img">
+      </div>
+      
+      <!-- Quick Info Block -->
+      <div class="contact-details-grid">
+        <div class="contact-meta-row">
+          <span class="meta-label">📍 Address</span>
+          <span class="meta-separator">:</span>
+          <span class="meta-value">Bhagirath Arcade, Opp. Nayara Petrol Pump, Veraval Junagadh Highway, Old Bypass, Veraval, Gujarat, 362265</span>
+        </div>
+        <div class="contact-meta-row">
+          <span class="meta-label">📞 Phone No</span>
+          <span class="meta-separator">:</span>
+          <span class="meta-value">+91 98765 43210</span>
+        </div>
+        <div class="contact-meta-row">
+          <span class="meta-label">✉️ Email ID</span>
+          <span class="meta-separator">:</span>
+          <span class="meta-value">info@bhagirathgroup.com</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side: Narrative Details -->
+    <div class="about-content-column">
+      <div class="content-block">
+        <span class="section-tagline">The Visionary Behind the Legacy</span>
+        <h2 class="section-headline">About Founder</h2>
+        
+        <p class="biography-text">
+          Bhagirath Group is founded on strong business ethics and is driven by <strong>Karshanbhai (Amubhai) Solanki</strong> at the age of 32 (D.O.B. May 5, 1956). Born and brought up in a village of Gujarat, he was a Kisan himself and was previously engaged in the work of farming, belonging deeply to a farmer family.
+        </p>
+        
+        <p class="biography-text">
+          Possessing vast agricultural land and a natural mindset framed for business, Karshanbhai started taking contract works in sugar factories and saw great opportunities in providing transport logistics for that inveterate industry.
+        </p>
+        
+        <p class="biography-text">
+          With the embark of 1988, he took a menace to kick-start a business of his own and activated the transportation business on April 1, 1988. Eventually, with the stiff efforts of Karshanbhai, his patience, grim and stern work, as well as sharp business intelligence, he attained his goal of providing top-notch transportation services for familiar companies and factories entrenched in Veraval, Gujarat.
+        </p>
+      </div>
+
+      <!-- Founder's Core Mission & Vision Values -->
+      <div class="content-block mission-vision-container">
+        <div class="mv-box">
+          <h4 class="mv-title">🎯 Personal Mission</h4>
+          <p class="mv-text">To bring the most effective, fast, and secure transport services for our client's company that allows them to increase their market share or revenue quickly and take their business to the next level.</p>
+        </div>
+        <div class="mv-box">
+          <h4 class="mv-title">👁️ Strategic Vision</h4>
+          <p class="mv-text">To increase the fleet of vehicles as well as to append it to a greater extent of landing places that may be covered in transportation, logistics, and freight forwarding by Bhagirath Group.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  /* Structure & Layout */
+  .about-founder-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    align-items: flex-start;
+  }
+
+  .about-image-column {
+    flex: 1 1 400px;
+    position: sticky;
+    top: 20px;
+  }
+
+  .about-content-column {
+    flex: 1 1 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* Image Frame Accents */
+  .image-frame-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto 30px auto;
+    padding: 15px;
+  }
+
+  .profile-display-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+
+  .frame-accent {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #f37022; /* Company Theme Orange */
+    pointer-events: none;
+  }
+
+  .frame-accent.top-left {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  .frame-accent.bottom-right {
+    bottom: 0;
+    right: 0;
+    border-top: none;
+    border-left: none;
+  }
+
+  /* Headings & Typography */
+  .section-tagline {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #888888;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    letter-spacing: 1px;
+  }
+
+  .section-headline {
+    font-size: 32px;
+    font-weight: 700;
+    color: #f37022;
+    margin: 0 0 20px 0;
+    border-bottom: 2px solid #fdf0e7;
+    padding-bottom: 8px;
+  }
+
+  .biography-text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444444;
+    margin: 0 0 16px 0;
+    text-align: justify;
+  }
+
+  /* Contact Information Cards */
+  .contact-details-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #fdfbf9;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #f37022;
+    max-width: 370px;
+    margin: 0 auto;
+  }
+
+  .contact-meta-row {
+    display: flex;
+    align-items: flex-start;
+    font-size: 14px;
+  }
+
+  .meta-label {
+    width: 100px;
+    font-weight: 600;
+    color: #333333;
+    flex-shrink: 0;
+  }
+
+  .meta-separator {
+    width: 20px;
+    color: #888888;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .meta-value {
+    color: #555555;
+    line-height: 1.4;
+  }
+
+  /* Mission / Vision Box Arrangements */
+  .mission-vision-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .mv-box {
+    flex: 1 1 280px;
+    background-color: #fdfaf7;
+    padding: 24px;
+    border-radius: 8px;
+    border-top: 3px solid #f37022;
+    box-shadow: 0 4px 15px rgba(243, 112, 34, 0.03);
+  }
+
+  .mv-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333333;
+    margin: 0 0 12px 0;
+  }
+
+  .mv-text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555555;
+    margin: 0;
+  }
+
+  /* Responsive Control Rules */
+  @media (max-width: 991px) {
+    .about-image-column {
+      position: relative;
+      top: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .about-container {
+      gap: 40px;
+    }
+    .section-headline {
+      font-size: 26px;
+    }
+    .contact-meta-row {
+      flex-direction: column;
+      gap: 2px;
+    }
+    .meta-separator {
+      display: none;
+    }
+  }
+</style>
+
+
+
+
+
+
 
 
 <!-- Contact Form -->
