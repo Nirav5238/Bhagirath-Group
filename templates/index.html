@@ -55,6 +55,248 @@
     </div>
 </section>
 
+
+
+
+<!--About Us-->
+
+<!-- Place this section into your main layout template where you want the "About Us" section to appear -->
+<section class="about-section">
+  <div class="about-container">
+    
+    <!-- Left Column: Portrait Image Layout with Angled Creative Borders -->
+    <div class="about-image-column">
+      <div class="image-frame-wrapper">
+        <div class="frame-accent top-left"></div>
+        <div class="frame-accent bottom-right"></div>
+        <!-- Replace 'owner_portrait.jpg' with your photo path (e.g., photo of Karshanbhai Solanki) -->
+        <img src="owner_portrait.jpg" alt="Bhagirath Group Management" class="profile-display-img">
+      </div>
+    </div>
+
+    <!-- Right Column: Business Profile Copy, Contact Meta, and Technical Expertise Badges -->
+    <div class="about-content-column">
+      <span class="section-tagline">My Story</span>
+      <h2 class="section-headline">About Me</h2>
+      
+      <p class="biography-text">
+        Providing excellence across Transportation, Real Estate, Building Materials, River Sand, and Stone Aggregates in Gujarat since 1988. Founded by Karshanbhai [Amubhai] Solanki, built on a legacy of trusted enterprise, transparent operations, and premium industrial distribution.
+      </p>
+
+      <!-- Structured Grid for Direct Corporate Contact Particulars -->
+      <div class="contact-details-grid">
+        <div class="contact-meta-row">
+          <span class="meta-label"><i class="icon-marker">📍</i> Address</span>
+          <span class="meta-separator">:</span>
+          <span class="meta-value">Bhagirath Arcade, Opp- Nayra Petrol Pump, Veraval Junagadh Highway, Old Bypass, Veraval, Gujarat, 362265</span>
+        </div>
+        
+        <div class="contact-meta-row">
+          <span class="meta-label"><i class="icon-phone">📞</i> Phone No</span>
+          <span class="meta-separator">:</span>
+          <span class="meta-value">+91 98765 43210</span>
+        </div>
+
+        <div class="contact-meta-row">
+          <span class="meta-label"><i class="icon-envelope">✉️</i> Email ID</span>
+          <span class="meta-separator">:</span>
+          <span class="meta-value">info@bhagirathgroup.com</span>
+        </div>
+      </div>
+
+      <!-- Footer Elements: Industrial Capabilities & Focus Areas -->
+      <div class="expertise-showcase">
+        <h4 class="expertise-title">My Expertise</h4>
+        <div class="badge-flex-container">
+          <span class="capability-pill"><span class="pill-dot gray">●</span> Logistical Operations</span>
+          <span class="capability-pill"><span class="pill-dot yellow">●</span> Real Estate Development</span>
+          <span class="capability-pill"><span class="pill-dot orange">●</span> Industrial Supply Chains</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+  /* Base Component Layout Constraints */
+  .about-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .about-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .about-image-column, 
+  .about-content-column {
+    flex: 1 1 450px;
+  }
+
+  /* Left Side: Creative Visual Frame Construction */
+  .image-frame-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .profile-display-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #f37022; /* Fallback brand orange fill background layer */
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  }
+
+  /* Abstract Stylized Corner Borders */
+  .frame-accent {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #f37022; /* Matches the prominent orange style from your site framework */
+    pointer-events: none;
+  }
+
+  .frame-accent.top-left {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  .frame-accent.bottom-right {
+    bottom: 0;
+    right: 0;
+    border-top: none;
+    border-left: none;
+  }
+
+  /* Right Side: Typography Formatting Engine */
+  .section-tagline {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666666;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+  }
+
+  .section-headline {
+    font-size: 36px;
+    font-weight: 700;
+    color: #f37022; /* Primary highlight branding color token */
+    margin: 0 0 20px 0;
+  }
+
+  .biography-text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444444;
+    margin-bottom: 30px;
+  }
+
+  /* Key-Value Block Layout System */
+  .contact-details-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 35px;
+  }
+
+  .contact-meta-row {
+    display: flex;
+    align-items: flex-start;
+    font-size: 15px;
+  }
+
+  .meta-label {
+    width: 120px;
+    font-weight: 600;
+    color: #333333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .meta-separator {
+    width: 25px;
+    color: #888888;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .meta-value {
+    color: #555555;
+    line-height: 1.4;
+  }
+
+  /* Capability Category Badge Footprint */
+  .expertise-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+    margin: 0 0 12px 0;
+  }
+
+  .badge-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .capability-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #f8f9fa;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #444444;
+    border: 1px solid #e9ecef;
+  }
+
+  .pill-dot {
+    font-size: 10px;
+    line-height: 1;
+  }
+  .pill-dot.gray { color: #6c757d; }
+  .pill-dot.yellow { color: #ffc107; }
+  .pill-dot.orange { color: #f37022; }
+
+  /* Fluid Display Configurations for Tablet & Small Mobile Screens */
+  @media (max-width: 768px) {
+    .about-container {
+      gap: 35px;
+    }
+    .section-headline {
+      font-size: 28px;
+    }
+    .contact-meta-row {
+      flex-direction: column;
+      gap: 4px;
+    }
+    .meta-separator {
+      display: none;
+    }
+  }
+</style>
+
+
 <!-- Contact Form -->
 <section id="contact" class="bg-slate-100 py-16">
     <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-md">
