@@ -1,4 +1,363 @@
-/* Custom Styles */
+/* ==========================================================================
+   BHAGIRATH GROUP - PREMIUM CORPORATE STYLE SHEET
+   ========================================================================== */
+
+/* 1. GLOBAL DESIGN TOKENS & SYSTEM RESET */
+:root {
+  --primary: #f37022;        /* Premium Vibrant Corporate Orange */
+  --primary-dark: #d65912;   /* Deep Hover State Orange */
+  --secondary: #652e15;     /* Rich Grounded Industrial Earth Brown */
+  --dark-neutral: #1a1e24;  /* Premium Slate Dark Body Typography Hues */
+  --light-neutral: #f8f9fa; /* Cream White Container Background Accent Layers */
+  --border-color: #e9ecef;  /* Subtle Grid Seam Lines */
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.06);
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--dark-neutral);
+  background-color: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* 2. TOP METADATA NAVIGATION UTILITY BAR */
+.top-bar {
+  background-color: var(--secondary);
+  color: #ffffff;
+  font-size: 13px;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.top-bar-meta-left {
+  display: flex;
+  gap: 20px;
+  font-weight: 500;
+}
+
+.top-bar-meta-right a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: var(--transition);
+}
+
+.top-bar-meta-right a:hover {
+  color: var(--primary);
+}
+
+/* 3. MODERNIZED SITE STICKY HEADER & LOGO ALIGNMENT */
+.main-header {
+  background-color: #ffffff;
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-brand-block {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+}
+
+.logo-brand-block img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* 4. PREMIUM NAVIGATION DRAWER BAR */
+.navigation-bar-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-item-link {
+  text-decoration: none;
+  color: var(--dark-neutral);
+  font-size: 15px;
+  font-weight: 600;
+  padding: 8px 4px;
+  position: relative;
+  transition: var(--transition);
+}
+
+.nav-item-link:hover,
+.nav-item-link.active-page {
+  color: var(--primary);
+}
+
+/* Elegant Underline Animation Hook */
+.nav-item-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary);
+  transition: var(--transition);
+}
+
+.nav-item-link:hover::after,
+.nav-item-link.active-page::after {
+  width: 100%;
+}
+
+.cta-header-button {
+  background-color: var(--primary);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: var(--transition);
+  box-shadow: 0 4px 14px rgba(243, 112, 34, 0.2);
+}
+
+.cta-header-button:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+/* 5. HERO INDUSTRIAL LANDING CONTAINER WITH TINT HOOK */
+.hero-industrial-banner {
+  position: relative;
+  background-image: linear-gradient(rgba(101, 46, 21, 0.85), rgba(26, 30, 36, 0.85)), url('/static/truck-trailer-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 40px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero-industrial-banner h1 {
+  font-size: 46px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
+}
+
+.hero-industrial-banner p {
+  font-size: 18px;
+  color: #e9ecef;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* 6. BUSINESS UNITS GRID AND CARDS PROFILE */
+.split-grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+
+.content-info-panel {
+  flex: 1 1 600px;
+}
+
+.content-info-panel h2 {
+  font-size: 32px;
+  color: var(--secondary);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Industrial Modern Bullet List Style */
+.premium-check-list {
+  list-style: none;
+  margin-top: 25px;
+}
+
+.premium-check-list li {
+  font-size: 16px;
+  color: #495057;
+  padding: 12px 0 12px 30px;
+  position: relative;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.premium-check-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 5px;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* 7. REVENUE CONVERSION QUOTE FORM CARD MODULE */
+.interactive-quote-form-card {
+  flex: 1 1 400px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border-top: 4px solid var(--primary);
+  box-shadow: var(--shadow-md);
+  padding: 35px;
+}
+
+.interactive-quote-form-card h3 {
+  font-size: 22px;
+  color: var(--dark-neutral);
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.form-group-input {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+  color: var(--dark-neutral);
+  background-color: var(--light-neutral);
+  transition: var(--transition);
+}
+
+.form-group-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(243, 112, 34, 0.1);
+}
+
+textarea.form-group-input {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.submit-form-action-button {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--secondary);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.submit-form-action-button:hover {
+  background-color: var(--dark-neutral);
+  box-shadow: var(--shadow-sm);
+}
+
+/* 8. CORPORATE ENTERPRISE FOOTER FOOTPRINT */
+.site-footer-corporate {
+  background-color: var(--dark-neutral);
+  color: #adb5bd;
+  padding: 60px 40px 30px 40px;
+  font-size: 14px;
+}
+
+.footer-columns-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-profile-block h4 {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer-profile-block ul {
+  list-style: none;
+}
+
+.footer-profile-block ul li {
+  margin-bottom: 12px;
+}
+
+.footer-profile-block ul li a {
+  color: #adb5bd;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.footer-profile-block ul li a:hover {
+  color: #ffffff;
+  padding-left: 5px;
+}
+
+.footer-copyright-banner {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 13px;
+  color: #6c757d;
+}
+
+/* 9. FLUID MEDIA CONSTRAINTS FOR MOBILE PLATFORMS */
+@media (max-width: 991px) {
+  .main-header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+  .top-bar {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-industrial-banner h1 {
+    font-size: 32px;
+  }
+  .split-grid-container {
+    margin: 30px auto;
+    gap: 30px;
+  }
+  .navigation-bar-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
 }
