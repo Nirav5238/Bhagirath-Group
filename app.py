@@ -25,11 +25,11 @@ def real_estate():
 
 @app.route('/Service-to-client')
 def Service_to_client():
-    return render_template('cab.html', title="Service-to-client | Bhagirath Group")
+    return render_template('Service_to_client.html', title="Service-to-client | Bhagirath Group")
 
 @app.route('/River-Sand-&-Stone-Aggregate')
 def River_Sand_Stone_Aggregate():
-    return render_template('farm.html', title="Bhagirath River Sand & Stone Aggregate")
+    return render_template('Sand_Stone_Aggregate.html', title="Bhagirath River Sand & Stone Aggregate")
 
 @app.route('/contact', methods=['POST'])
 def contact():
