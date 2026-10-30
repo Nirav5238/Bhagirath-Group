@@ -29,7 +29,7 @@ def Service_to_client():
 
 @app.route('/River-Sand-&-Stone-Aggregate')
 def River_Sand_Stone_Aggregate():
-    return render_template('Sand_Stone_Aggregate.html', title="Bhagirath River Sand & Stone Aggregate")
+    return render_template('Sand_Stone_Aggregate.html', title="Bhagirath Mining Operation.")
 
 @app.route('/contact', methods=['POST'])
 def contact():
