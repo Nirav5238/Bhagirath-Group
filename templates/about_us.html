@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block title %}About Us - Bhagirath Group{% endblock %}
+
+{% block content %}
+<div class="about-container" style="max-width: 1200px; margin: 0 auto; padding: 40px 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333;">
+    
+    <!-- Hero / Header Section -->
+    <div class="about-hero" style="text-align: center; margin-bottom: 50px; padding: 40px; background: linear-gradient(135deg, #f9f6f0 0%, #f1e9db 100%); border-radius: 8px;">
+        <h1 style="color: #8B4513; font-size: 2.5rem; margin-bottom: 10px;">About Bhagirath Group</h1>
+        <p style="font-size: 1.2rem; color: #666; font-style: italic; max-width: 800px; margin: 0 auto;">
+            Delivering excellence in Transportation, Real Estate, Building Materials, River Sand, and Stone Aggregates across Gujarat since 1988.
+        </p>
+    </div>
+
+    <!-- Main Content Layout Split -->
+    <div class="about-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 50px; align-items: center;">
+        
+        <!-- Left Side: History & Profile -->
+        <div class="about-profile">
+            <h2 style="color: #8B4513; border-bottom: 2px solid #8B4513; padding-bottom: 10px; margin-bottom: 20px;">Company Profile & Origin</h2>
+            <p style="line-height: 1.7; margin-bottom: 15px; text-align: justify;">
+                Bhagirath Group is built on strong business ethics, integrity, and a commitment to reliable service. It was founded by <strong>Karshanbhai (Amubhai) Solanki</strong>, who started the business at the age of 32. 
+            </p>
+            <p style="line-height: 1.7; margin-bottom: 15px; text-align: justify;">
+                Born and raised in a village in Gujarat, Karshanbhai came from a farming family and worked as a farmer in his early years. With access to substantial agricultural land and a natural entrepreneurial mindset, he began undertaking contract work for sugar factories, where he identified a strong opportunity in transport and logistics services.
+            </p>
+            <p style="line-height: 1.7; margin-bottom: 15px; text-align: justify;">
+                On April 1, 1988, Karshanbhai established his own transportation business. Through persistence, hard work, disciplined operations, and sharp business insight, he developed Bhagirath into a trusted provider of high-quality transportation services for leading companies and factories in and around Veraval, Gujarat.
+            </p>
+        </div>
+
+        <!-- Right Side: Imagery / Visual Visual Anchor -->
+        <div class="about-visual" style="text-align: center;">
+            <img src="{{ url_for('static', filename='founder.png') }}" alt="Karshanbhai (Amubhai) Solanki" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border: 4px solid #fff;">
+            <p style="margin-top: 10px; font-size: 0.9rem; color: #777;">Karshanbhai (Amubhai) Solanki — Founder</p>
+        </div>
+    </div>
+
+    <!-- Diversification / Strategic Growth Sections -->
+    <div class="about-growth" style="margin-bottom: 50px; padding: 30px; background-color: #fafafa; border-left: 5px solid #8B4513; border-radius: 4px;">
+        <h2 style="color: #8B4513; margin-bottom: 15px;">Growth & Business Expansion</h2>
+        <p style="line-height: 1.7; margin-bottom: 20px;">
+            Over the years, Bhagirath Group expanded beyond transportation into a diversified enterprise serving industrial, infrastructure, and construction needs across Gujarat. Today, the group provides excellence across several vertical markets:
+        </p>
+        <ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; list-style-type: none; padding: 0;">
+            <li style="padding: 10px; background: #fff; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); font-weight: bold; color: #555;">🚛 Transportation and Logistics</li>
+            <li style="padding: 10px; background: #fff; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); font-weight: bold; color: #555;">🏢 Real Estate & Commercial Hubs</li>
+            <li style="padding: 10px; background: #fff; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); font-weight: bold; color: #555;">🏗️ Premium Building Materials</li>
+            <li style="padding: 10px; background: #fff; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); font-weight: bold; color: #555;">💎 River Sand & Stone Aggregates</li>
+        </ul>
+        <p style="line-height: 1.7; margin-top: 20px; text-align: justify;">
+            The group's logistics operations include Bhagirath Roadways and associated companies, which have provided transport, loading, and freight services since 1988. Its foundational accomplishments include strategic transportation and loading services for <strong>GHCL</strong>, a premier soda ash manufacturer operating out of Sutrapada, Veraval.
+        </p>
+    </div>
+
+    <!-- Legacy / Values Statement Footer block -->
+    <div class="about-legacy" style="text-align: center; border-top: 1px solid #eee; padding-top: 35px;">
+        <h3 style="color: #8B4513; margin-bottom: 10px;">Our Founder's Legacy</h3>
+        <p style="line-height: 1.7; max-width: 900px; margin: 0 auto; color: #555;">
+            Karshanbhai Solanki’s journey from farming to enterprise reflects the group’s core values: hard work, transparency, customer trust, and long-term relationships. Under his continued leadership vision, Bhagirath Group remains a trusted Gujarat-based enterprise recognized for dependable industrial distribution and logistics solutions.
+        </p>
+    </div>
+
+</div>
+
+<!-- Responsive Structural Adjustments -->
+<style>
+    @media (max-width: 768px) {
+        .about-grid { grid-template-columns: 1fr !important; gap: 20px !important; }
+        .about-growth ul { grid-template-columns: 1fr !important; }
+    }
+</style>
+{% endblock %}

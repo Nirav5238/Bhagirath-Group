@@ -31,6 +31,11 @@ def Service_to_client():
 def River_Sand_Stone_Aggregate():
     return render_template('Sand_Stone_Aggregate.html', title="Bhagirath Mining Operation.")
 
+@app.route('/about-us')
+def about_us():
+    return render_template('about_us.html', title="About us.")
+
+
 @app.route('/contact', methods=['POST'])
 def contact():
     name = request.form.get('name')
