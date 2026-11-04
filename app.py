@@ -19,9 +19,9 @@ def home():
 def transport():
     return render_template('transport.html', title="Roadways & Logistics | Bhagirath Group")
 
-@app.route('/real-estate')
-def real_estate():
-    return render_template('real_estate.html', title="Real Estate & Arcade | Bhagirath Group")
+# @app.route('/real-estate')
+# def real_estate():
+    # return render_template('real_estate.html', title="Real Estate & Arcade | Bhagirath Group")
 
 @app.route('/Service-to-client')
 def Service_to_client():
