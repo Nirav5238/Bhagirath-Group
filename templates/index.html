@@ -56,31 +56,42 @@
     </div>
 </section>
 
+<!-- Business Overview Grid -->
+<section id="services" class="max-w-7xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-center mb-12">Our Key Divisions</h2>
+    
+    <!-- Changed grid setup to flex with centering rules -->
+    <div class="flex flex-wrap justify-center gap-6">
+        <!-- Roadways -->
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200 hover:shadow-md transition w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-sm">
+            <i class="fa-solid fa-truck-front text-3xl text-amber-600 mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">Transportation</h3>
+            <p class="text-sm text-slate-600 mb-4">logistics partnership with GHCL Sutrapada, Salt Transport, Coal Transport, Limestone Transport & River Sand Transport</p>
+            <a href="{{ url_for('transport') }}" class="text-amber-700 font-semibold text-sm hover:underline">Learn More &rarr;</a>
+        </div>
+
+        <!-- Cab Services -->
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200 hover:shadow-md transition w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-sm">
+            <i class="fa-solid fa-taxi text-3xl text-amber-600 mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">Services & Clients</h3>
+            <p class="text-sm text-slate-600 mb-4">Trusted logistical and supply chain solutions partnering with industry leaders like GHCL Sutrapada for over three decades.</p>
+            <a href="{{ url_for('Service_to_client') }}" class="text-amber-700 font-semibold text-sm hover:underline">Learn More &rarr;</a>
+        </div>
+
+        <!-- Farm Stay -->
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200 hover:shadow-md transition w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-sm">
+            <i class="fa-solid fa-house-chimney-window text-3xl text-amber-600 mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">Mining Operation.</h3>
+            <p class="text-sm text-slate-600 mb-4">Premium river sand and high-quality stone aggregates supplying major infrastructure and construction projects at Gujarat.</p>
+            <a href="{{ url_for('River_Sand_Stone_Aggregate') }}" class="text-amber-700 font-semibold text-sm hover:underline">Learn More &rarr;</a>
+        </div>
+    </div>
+</section>
 
 
 
 <style>
-
-/* Container holding all three cards */
-.divisions-container {
-    display: flex;
-    flex-wrap: wrap;           /* Allows cards to wrap nicely on mobile screens */
-    justify-content: center;   /* Perfectly centers the cards horizontally */
-    gap: 24px;                 /* Maintains the spacing between your cards */
-    padding: 40px 20px;        /* Optional: adds spacing above and below the block */
-    width: 100%;               /* Ensures full width allocation for alignment */
-}
-
-/* Centering the section title text */
-.section-title {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 28px;
-    font-weight: bold;
-    color: #0b2240;            /* Matching your dark blue text color */
-}
-
-
+  
   /* Structure & Layout */
   .about-founder-section {
     padding: 60px 20px;
